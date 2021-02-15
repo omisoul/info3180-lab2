@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block css %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+{% endblock%}
+{% block main %}
+<div class="profile_card">
+    <div class="profile_meta profile_centered">
+        <img class="profile_pic" src="{{ url_for('static', filename='profile_pic.png') }}" alt="">
+        <h1 class="full_name">Marlon James</h1>
+        <h6 class="user_name">@mjames</h6>
+        <p>Manchester, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>
+    <div class="profile_centered">
+        <p class="desc">I am an energetic and fun loving UWI student. I enjoy creating beautiful designs and especially love enhancing the user's experience</p>
+        <div class="stats">
+            <div>
+                <h4>6</h4>
+                <p class="desc">Posts</p>
+            </div>
+            <div>
+                <h4>1446</h4>
+                <p class="desc">Following</p>
+            </div>
+            <div>
+                <h4>1707</h4>
+                <p class="desc">Followers</p>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+
+
+{% endblock %}
