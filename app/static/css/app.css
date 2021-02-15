@@ -5,6 +5,8 @@ body {
 .profile_card{
     border: 2px solid #eee;
     border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .profile_meta{
     background-color: #0057ea;
